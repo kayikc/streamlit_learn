@@ -7,10 +7,10 @@ with tab1:
    st.markdown("# Basic Components")
    
    st.header("Learn")
-   st.text("Learn")
-   st.caption("Learn")
-   st.code("Learn")
    st.write("Learn!")
+   st.text("Learn")
+   st.code("Learn")
+   st.caption("Learn")
 
    # hyperlink
    st.markdown("[Wikipedia](https://www.wikipedia.org/)")

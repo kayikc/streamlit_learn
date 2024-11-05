@@ -1,7 +1,7 @@
 import streamlit as st
 
 #text
-tab1, tab2 , tab3 = st.tabs(["Basic Components","Basic Data Vis","Date & Time"])  
+tab1, tab2 , tab3, tab4 = st.tabs(["Basic Components","Basic Data Vis","Date & Time","User Inputs"])  
 
 with tab1:
    st.markdown("# Basic Components")
@@ -141,3 +141,9 @@ with tab3:
    st.success("There!")
    
    #added a comment!
+   
+with tab4:
+   st.markdown("# User Inputs")
+   name = st.text_input("Enter your name.")
+   if st.button("Greet"):
+      st.success(f"Hello, {name}! Welcome to this Stream Learn session. Wish you fun.")
